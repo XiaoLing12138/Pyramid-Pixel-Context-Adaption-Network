@@ -1,0 +1,39 @@
+train:
+  size: 224
+  cuda:
+  resume: False
+  seed:
+  lr: 0.002
+  batch-size: 32
+  img_num: 128
+  epochs: 150
+  decay: !!float 1e-4
+  dataset: isic
+  data_path:
+  num_worker: 8
+  num_classes: 7
+  mean:
+    - 0.485
+    - 0.456
+    - 0.406
+  std:
+    - 0.229
+    - 0.224
+    - 0.225
+model:
+  folder: checkpoints
+  file: resnet_ppca
+  caller: ppca_resnet18
+  name: resnet_ppca18
+log:
+  folder: logs
+
+
+
+
+
+
+
+
+
+
