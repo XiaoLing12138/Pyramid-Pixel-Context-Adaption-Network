@@ -3,7 +3,7 @@ train:
   cuda:
   resume: False
   seed:
-  lr: 0.002
+  lr: 0.0025
   batch-size: 32
   img_num: 128
   epochs: 150
